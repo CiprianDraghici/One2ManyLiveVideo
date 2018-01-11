@@ -112,3 +112,4 @@ packages/
 /node_modules/mime-types/
 /node_modules/parseurl/
 /node_modules/socket.io-client/
+/node_modules/socket.io-parser/
