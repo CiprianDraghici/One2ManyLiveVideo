@@ -1,15 +1,14 @@
-// var canvas = document.getElementById("preview");
-// var context = canvas.getContext("2d");
+var socket = io();
 
-// canvas.width = 800;
-// canvas.height = 600;
+var canvas = document.getElementById("preview");
+var context = canvas.getContext("2d");
 
-// context.width = canvas.width;
-// context.heigth = canvas.height;
+canvas.width = 800;
+canvas.height = 600;
+context.width = canvas.width;
+context.heigth = canvas.height;
 
 var video = document.getElementById("video");
-
-var socket = io();
 
 function logger(msg) {
     $("#logger").text(msg);
@@ -24,9 +23,10 @@ function loadFail(stream) {
     logger("Camera failed loading");
 }
 
-function viewVideo(video, /*context*/) {
-    //context.drawImage(video, 0, 0, context.width, context.height);
-    socket.emit("stream", video.toDataURL("image/webp"));
+function viewVideo(video, context) {
+    context.drawImage(video, 0, 0);
+    // context.drawImage(video, 0, 0, context.width, context.height);
+    socket.emit("stream", canvas.toDataURL("image/webp"));
 }
 
 $(function () {
@@ -40,6 +40,6 @@ $(function () {
     }
 
     setInterval(function () {
-        viewVideo(video, /*context*/);
+        viewVideo(video, context);
     }, 500);
 });
