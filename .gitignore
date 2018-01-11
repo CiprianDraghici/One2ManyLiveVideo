@@ -109,3 +109,6 @@ packages/
 /node_modules/parseuri/
 /node_modules/socket.io-adapter/
 /node_modules/type-is/
+/node_modules/mime-types/
+/node_modules/parseurl/
+/node_modules/socket.io-client/
