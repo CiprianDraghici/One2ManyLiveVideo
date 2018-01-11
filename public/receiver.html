@@ -9,16 +9,9 @@
 </head>
 
 <body>
-        <img id="play">
+        <img id="play" alt="Missing">
         <div id="logger"></div>
 
-        <script type="text/javascript">
-            var socket = io();
-            socket.on("stream", function(image){
-                var img = document.getElementById("play");
-                img.src = image;
-               $("logger").text(image);
-            });
-        </script>
+        <script type="text/javascript", src="/receiver.js"></script>
 </body>
 </html>
