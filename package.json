@@ -1,0 +1,16 @@
+{
+  "name": "soket_io_stream",
+  "version": "1.0.0",
+  "description": "peer2peer live streaming using soket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ciprian Draghici",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*",
+    "log": "*"
+  }
+}
