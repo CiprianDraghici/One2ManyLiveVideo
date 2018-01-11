@@ -102,3 +102,10 @@ packages/
 /node_modules/ws/
 /node_modules/xmlhttprequest-ssl/
 /node_modules/yeast/
+/node_modules/engine.io-client/
+/node_modules/engine.io-parser/
+/node_modules/isarray/
+/node_modules/mime-db/
+/node_modules/parseuri/
+/node_modules/socket.io-adapter/
+/node_modules/type-is/
