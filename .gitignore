@@ -10,6 +10,8 @@ node_modules/backo2/
 node_modules/array-limiter/
 node_modules/base64-arraybuffer/
 
+package-lock.json
+
 #Ignore thumbnails created by Windows
 Thumbs.db
 #Ignore files built by Visual Studio
